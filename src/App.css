@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E6E6E6;
+  
+}
+
+body::before {
+  background-image: url("../public/images/oldpaper.jpg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  content: "";
+  opacity: 0.35;
+}
+
+.escudo {
+  width: auto;
+  height: 70px;
+  position: relative;
+  padding-right: 2rem;
+}
+
+header {
+  position: relative;
+  box-shadow: 1px 5px 10px 1px #888888;
+  height: 170px;
+  padding-left: 1rem;
+  background-color: #C5A880;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  background: url("../public/images/firma2.jpg");
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+
+header h1 {
+  position: relative;
+  font-family: La Belle Aurore;
+  color: #430000;
+  text-shadow: 1px 1px 5px #D5CEA3;
+  font-size: 60px;
+  height: 90px;
+  margin: 0;
+  padding: .5rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 2rem;
+  color: #420000;
+  position: relative;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigate li{
+  position: relative;
+  display: inline;
+  padding: 2rem;
+  font-weight: bolder;
+}
+
+.navigate li:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
