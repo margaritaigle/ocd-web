@@ -1,2 +1,98 @@
-body{background-color:#e6e6e6;margin:0;padding:0}body:before{background-image:url(/static/media/oldpaper.1108977a74a4d7d9f8ac.jpg);background-size:cover;bottom:0;content:"";left:0;opacity:.35;position:absolute;right:0;top:0}.escudo{height:70px;padding-right:2rem;width:auto}.escudo,header{position:relative}header{background-color:#c5a880;box-shadow:1px 5px 10px 1px #888;height:170px;padding-left:1rem}.title{align-items:center;display:flex;flex-direction:row;justify-content:center}header:before{background:url(/static/media/firma2.1eec641bf97a3138be2e.jpg);background-position:50%;background-size:cover;bottom:0;content:"";left:0;opacity:.25;position:absolute;right:0;top:0}header h1{color:#430000;font-family:La Belle Aurore;font-size:60px;height:90px;margin:0;padding:.5rem;text-shadow:1px 1px 5px #d5cea3}.btn,header h1{position:relative}.btn{background-color:initial;border:none;color:#420000;font-size:2rem;margin-left:auto;margin-right:10px}.navigate{display:flex;justify-content:space-evenly}.navigate li{display:inline;font-weight:bolder;padding:2rem;position:relative}.navigate li:hover{cursor:pointer;text-decoration:underline}
+body {
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0
+}
+
+body:before {
+    background-image: url(static/media/oldpaper.1108977a74a4d7d9f8ac.jpg);
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .35;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.escudo {
+    height: 70px;
+    padding-right: 2rem;
+    width: auto
+}
+
+.escudo,
+header {
+    position: relative
+}
+
+header {
+    background-color: #c5a880;
+    box-shadow: 1px 5px 10px 1px #888;
+    height: 170px;
+    padding-left: 1rem
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+header:before {
+    background: url(static/media/firma2.1eec641bf97a3138be2e.jpg);
+    background-position: 50%;
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .25;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+header h1 {
+    color: #430000;
+    font-family: La Belle Aurore;
+    font-size: 60px;
+    height: 90px;
+    margin: 0;
+    padding: .5rem;
+    text-shadow: 1px 1px 5px #d5cea3
+}
+
+.btn,
+header h1 {
+    position: relative
+}
+
+.btn {
+    background-color: initial;
+    border: none;
+    color: #420000;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: 10px
+}
+
+.navigate {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.navigate li {
+    display: inline;
+    font-weight: bolder;
+    padding: 2rem;
+    position: relative
+}
+
+.navigate li:hover {
+    cursor: pointer;
+    text-decoration: underline
+}
+
 /*# sourceMappingURL=main.6e57529a.css.map*/
