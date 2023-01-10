@@ -5,7 +5,7 @@ body {
 }
 
 body:before {
-    background-image: url("../media/oldpaper.1108977a74a4d7d9f8ac.jpg");
+    background-image: url(../media/oldpaper.1108977a74a4d7d9f8ac.jpg);
     background-size: cover;
     bottom: 0;
     content: "";
@@ -42,7 +42,7 @@ header {
 }
 
 header:before {
-    background: url("../media/firma2.1eec641bf97a3138be2e.jpg");
+    background: url(../media/firma2.1eec641bf97a3138be2e.jpg);
     background-position: 50%;
     background-size: cover;
     bottom: 0;
@@ -95,4 +95,38 @@ header h1 {
     text-decoration: underline
 }
 
-/*# sourceMappingURL=main.6e57529a.css.map*/
+@media only screen and (max-width:1000px) {
+    header {
+        height: 90px
+    }
+
+    .escudo {
+        height: 30px;
+        width: auto
+    }
+
+    header h1 {
+        font-size: 30px;
+        height: 50px
+    }
+
+    .navigate li {
+        font-size: 10px;
+        padding: 0
+    }
+}
+
+@media only screen and (max-width:550px) {
+    header h1 {
+        font-size: 15px;
+        height: 30px
+    }
+
+    .escudo {
+        height: 20px;
+        padding: 1rem;
+        width: auto
+    }
+}
+
+/*# sourceMappingURL=main.9c87b301.css.map*/
