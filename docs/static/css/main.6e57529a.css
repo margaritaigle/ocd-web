@@ -5,7 +5,7 @@ body {
 }
 
 body:before {
-    background-image: url(../media/oldpaper.1108977a74a4d7d9f8ac.jpg);
+    background-image: url("../media/oldpaper.1108977a74a4d7d9f8ac.jpg");
     background-size: cover;
     bottom: 0;
     content: "";
@@ -42,7 +42,7 @@ header {
 }
 
 header:before {
-    background: url(../media/firma2.1eec641bf97a3138be2e.jpg);
+    background: url("../media/firma2.1eec641bf97a3138be2e.jpg");
     background-position: 50%;
     background-size: cover;
     bottom: 0;
