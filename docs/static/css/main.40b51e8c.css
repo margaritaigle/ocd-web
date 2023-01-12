@@ -1,6 +1,18 @@
+* {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem
+}
+
 body {
     background-color: #e6e6e6;
-    margin: 0;
+    margin: 0 0 2rem;
     padding: 0
 }
 
@@ -11,9 +23,14 @@ body:before {
     content: "";
     left: 0;
     opacity: .35;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0
+}
+
+.App,
+.escudo {
+    position: relative
 }
 
 .escudo {
@@ -22,16 +39,14 @@ body:before {
     width: auto
 }
 
-.escudo,
-header {
-    position: relative
-}
-
 header {
     background-color: #c5a880;
     box-shadow: 1px 5px 10px 1px #888;
     height: 170px;
-    padding-left: 1rem
+    padding-left: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1
 }
 
 .title {
@@ -48,7 +63,7 @@ header:before {
     bottom: 0;
     content: "";
     left: 0;
-    opacity: .25;
+    opacity: .35;
     position: absolute;
     right: 0;
     top: 0
@@ -58,33 +73,28 @@ header h1 {
     color: #430000;
     font-family: La Belle Aurore;
     font-size: 60px;
+    font-weight: lighter;
     height: 90px;
     margin: 0;
     padding: .5rem;
-    text-shadow: 1px 1px 5px #d5cea3
+    position: relative;
+    text-shadow: 1px 1px 10px #d5cea3
 }
 
-.btn,
-header h1 {
-    position: relative
-}
-
-.btn {
-    background-color: initial;
-    border: none;
-    color: #420000;
-    font-size: 2rem;
-    margin-left: auto;
-    margin-right: 10px
-}
-
-.navigate {
+.wrapper {
+    align-items: center;
     display: flex;
-    justify-content: space-evenly
+    flex-direction: column
+}
+
+.navigate ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0
 }
 
 .navigate li {
-    display: inline;
+    display: flex;
     font-weight: bolder;
     padding: 2rem;
     position: relative
@@ -93,6 +103,46 @@ header h1 {
 .navigate li:hover {
     cursor: pointer;
     text-decoration: underline
+}
+
+.navigate li a {
+    color: #000;
+    height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 10rem
+}
+
+.p-historia {
+    padding: 1rem;
+    width: 85%
+}
+
+.p-historia p {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 18px
+}
+
+.p-historia h1 {
+    font-family: La Belle Aurore
+}
+
+.p-quienes-somos {
+    padding: 1rem;
+    width: 85%
+}
+
+.p-quienes-somos h1 {
+    font-family: La Belle Aurore
+}
+
+.p-quienes-somos p {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 18px
+}
+
+.sta-teresa-img {
+    width: 75%
 }
 
 @media only screen and (max-width:1000px) {
@@ -119,14 +169,20 @@ header h1 {
 @media only screen and (max-width:550px) {
     header h1 {
         font-size: 15px;
-        height: 30px
+        height: 30px;
+        margin-top: .5rem
     }
 
     .escudo {
         height: 20px;
-        padding: 1rem;
+        padding: .5rem;
         width: auto
+    }
+
+    .navigate li {
+        font-size: 10px;
+        padding-top: 1rem
     }
 }
 
-/*# sourceMappingURL=main.9c87b301.css.map*/
+/*# sourceMappingURL=main.40b51e8c.css.map*/
