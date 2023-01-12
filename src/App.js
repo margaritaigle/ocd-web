@@ -17,10 +17,12 @@ function App() {
               <a href="#quienes-somos">¿QUIÉNES SOMOS?</a>
             </li>
             <li>
-              <a>CONTACTO</a>
+              <a>GALERÍA</a>
             </li>
             <li>
-              <a>OCD FLORIDA</a>
+              <a href="https://www.facebook.com/profile.php?id=100011800052593">
+                OCD FLORIDA
+              </a>
             </li>
           </ul>
         </nav>
@@ -55,6 +57,7 @@ function App() {
             mismo estilo original.
           </p>
         </div>
+
         <div id="quienes-somos" className="p-quienes-somos">
           <h1>¿Qué significa ser Carmelita Descalza?</h1>
           <p>
@@ -116,8 +119,29 @@ function App() {
             realidad.
           </p>
         </div>
+
         <img src="images/stateresa.jpg" className="sta-teresa-img" />
       </div>
+
+      <footer className="footer-ocd">
+        <ul>
+          <li>
+            <span>Misas: </span>Lunes a Sábados 7.30hs y Domingos 9hs.
+          </li>
+          <li>
+            <span>Teléfono: </span>23366640
+          </li>
+          <li>
+            <span>Dirección: </span>Amarales 3433, Prado. Montevideo.
+          </li>
+        </ul>
+        <div>
+          <img src="images/instagram.svg" />
+          <a href="https://www.instagram.com/monjascarmelitas/">
+            <span> monjascarmelitas</span>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

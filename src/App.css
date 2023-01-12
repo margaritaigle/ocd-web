@@ -12,7 +12,6 @@ html {
 
 body {
   margin: 0;
-  margin-bottom: 2rem;
   padding: 0;
   background-color: #E6E6E6;
 }
@@ -45,9 +44,10 @@ header {
   position: sticky;
   box-shadow: 1px 5px 10px 1px #888888;
   height: 170px;
-  padding-left: 1rem;
+  padding-right: 1.5rem;
   background-color: #C5A880;
   z-index: 1;
+
 }
 
 .title{
@@ -80,17 +80,14 @@ header h1 {
   margin: 0;
   padding: .5rem;
   font-weight: lighter;
+  
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .navigate ul{
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
   margin: 0;
 }
 
@@ -113,6 +110,12 @@ header h1 {
   height: 1.5rem;
   width: 10rem;
   text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .p-historia {
@@ -151,6 +154,50 @@ header h1 {
   width: 75%;
 
 }
+
+
+.footer-ocd {
+  margin-top: 1rem;
+  position: sticky;
+  width: 100%;
+  background-color: #C5A880;
+height: 40px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.footer-ocd div img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.footer-ocd ul {
+   display: flex; 
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+.footer-ocd ul li{
+ display: flex;
+ flex-direction: row;
+text-decoration: none;
+padding-left: 2rem;
+}
+
+.footer-ocd ul li span {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.footer-ocd div{
+  width: min-content;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  padding-right: 1rem;
+}
+
 @media only screen and (max-width: 1000px) {
 
   header {
@@ -169,6 +216,18 @@ header h1 {
       font-size: 10px;
       padding: 0;
     }
+
+    .navigate li a {
+      width: 7.5rem
+    }
+
+    .footer-ocd{
+      height: 50px;
+      font-size: 10px;
+    }
+    .footer-ocd ul li{
+      padding-left: 5px;
+    }
   }
 
   @media only screen and (max-width: 550px) {
@@ -185,7 +244,28 @@ header h1 {
         padding: .5rem;
       }
       .navigate li{
-        font-size: 10px;
-        padding-top: 1rem;
+        font-size: 7px;
+        padding-top: 1.5rem;
+        padding-left: 5px;
+      }
+
+      .navigate li a {
+        width: 70px
+      }
+
+      .footer-ocd {
+        font-size: 7px
+      }
+      .footer-ocd ul{
+        padding: 2px;
+      }
+
+      .footer-ocd ul li{
+        padding: 2px;
+      }
+      .footer-ocd div{
+        margin-left: 0;
+        padding-right: 5px;
+        flex-direction: column;
       }
     }
